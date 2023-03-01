@@ -5,9 +5,15 @@
 }
 body {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'Satoshi', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
 }
 
 .site-info {
@@ -20,7 +26,7 @@ body {
   align-items: center;
   }
 
-header {
+.top-section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,7 +73,10 @@ header {
     width: 500px;
     Height: 145px;
     Top: 196px;
-    margin: 32px 55px 58px 85px;
+    margin: 32px 113px 58px 143px;
+    font-family: EB Garamond;
+    font-size: 22px;
+    font-weight: 400;
   }
 
 .TBL-section {
@@ -105,3 +114,124 @@ header {
   .social-icon:hover {
    filter: brightness(0%)
   }
+
+  .tech {
+    background-color: #f0ece2;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech h4 {
+    weight: 700;
+    font-size: 80px;
+    color: #596e79;
+  }
+
+  .tech-knowledge {
+    width: 500px;
+    height: 91px;
+    margin-left: 143px;
+    align-content: center;
+    font-family: EB Garamond;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    }
+
+    .featured-projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .featured-projects h4 {
+      font-size: 80px;
+      font-weight: 700;
+      color:#596e79;
+      margin-bottom: 40px;
+
+    }
+
+    .project1 {
+      border: solid 2px black;
+      max-width: 820px;
+      height: 280px;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .project1 h5{
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      line-height: 43.2px;
+    }
+
+    .project1 p {
+      font-family: EB Garamond;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28.71px;
+      margin-bottom: 24px;
+    }
+
+    .blackBtn{
+      font-size: 16px;
+      font-weight: 500;
+      gap: 4px;
+      margin-bottom: 40px;
+    }
+
+    span:nth-child(1){
+      background: black;
+      color: white;
+      padding: 2px 6px;
+    }
+    span:nth-child(2){
+      background: black;
+      color: white;
+      padding: 2px 6px;
+    }
+    span:nth-child(3){
+      background: black;
+      color: white;
+      padding: 2px 6px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+
+    .liveBtn {
+      gap: 7px;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 40px;
+      width: 164px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: none;
+    }
+
+    .githubBtn {
+      gap: 7px;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 40px;
+      width: 164px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: none;
+    }
+    
