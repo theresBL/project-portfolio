@@ -24,7 +24,7 @@ header {
   height: 980px;
   display: flex;
   align-items: center;
-  }
+}
 
 .top-section {
   display: flex;
@@ -38,7 +38,7 @@ header {
   top: 0px;
 }
 
-  .profile {
+.profile {
   width: 303px;
   height: 113px;
   }
@@ -48,36 +48,40 @@ header {
     width: 164px;
     border-radius: 50%;
     margin: 0px 29px 0px 0px;
-}
+  }
 
-  h1 {
-    color: #c7b198;
+h1 {
+    color: #79c2d0;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     }
 
-  h2 {
+h2 {
     font-weight: 900;
     font-size: 30px;
     line-height: 43px;
-  }
+    }
 
-  h3 {
+h3 {
     font-weight: 500;
     font-size: 22px;
     color: #596e79;
-  }
+}
 
-  .profile-info {
+.profile-info {
     width: 500px;
     Height: 145px;
     Top: 196px;
     margin: 32px 113px 58px 143px;
-    font-family: EB Garamond;
+}  
+    
+p {
+  font-family: EB Garamond;
     font-size: 22px;
     font-weight: 400;
-  }
+    line-height: 28.71px;
+}
 
 .TBL-section {
     width: 50%;
@@ -115,6 +119,7 @@ header {
    filter: brightness(0%)
   }
 
+  /* Tech-section */
   .tech {
     background-color: #f0ece2;
     width: 100%;
@@ -125,9 +130,12 @@ header {
     align-items: center;
   }
 
+h4 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+}
   .tech h4 {
-    weight: 700;
-    font-size: 80px;
     color: #596e79;
   }
 
@@ -136,47 +144,57 @@ header {
     height: 91px;
     margin-left: 143px;
     align-content: center;
-    font-family: EB Garamond;
-    font-weight: 400;
-    font-size: 22px;
     line-height: 32px;
     }
 
+    .tech-knowledge span:nth-child(1){
+      background: #c7b198;
+      color: white;
+    }
+
+    .tech-knowledge span:nth-child(2){
+      background: #ff847c;
+      color: white;
+    }
+
+    .tech-knowledge span:nth-child(3){
+      background: #79c2d0;
+      color: white;
+    }
+
+/* Featured projects */
     .featured-projects {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 120px;
     }
 
     .featured-projects h4 {
-      font-size: 80px;
-      font-weight: 700;
       color:#596e79;
       margin-bottom: 40px;
+      gap:unset;
 
     }
 
-    .project1 {
+    .project {
       border: solid 2px black;
       max-width: 820px;
       height: 280px;
       display: flex;
       flex-direction: row;
       gap: 40px;
+      margin-bottom: 120px;
     }
 
-    .project1 h5{
+  h5{
       font-size: 32px;
       font-weight: 900;
       margin-bottom: 12px;
       line-height: 43.2px;
     }
 
-    .project1 p {
-      font-family: EB Garamond;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 28.71px;
+    .project p {
       margin-bottom: 24px;
     }
 
@@ -187,17 +205,7 @@ header {
       margin-bottom: 40px;
     }
 
-    span:nth-child(1){
-      background: black;
-      color: white;
-      padding: 2px 6px;
-    }
-    span:nth-child(2){
-      background: black;
-      color: white;
-      padding: 2px 6px;
-    }
-    span:nth-child(3){
+   .blackBtn span{
       background: black;
       color: white;
       padding: 2px 6px;
@@ -222,6 +230,10 @@ header {
       border: none;
     }
 
+    .liveBtn:hover {
+      background-color: #ff847c;
+    }
+
     .githubBtn {
       gap: 7px;
       font-size: 20px;
@@ -234,4 +246,151 @@ header {
       align-items: center;
       border: none;
     }
+
+    .githubBtn:hover {
+      background-color:#79c2d0;
+    }
+
+/* My words */
+    .my-words {
+      background-color: #f0ece2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 98px;
+    margin-bottom: 276px;
+    }
+
+    .my-words h4{
+     color:#ff847c;
+     margin: 120px 1080px 79px 143px;
+    }
+
+    .my-words-box {
+      background-color: ;
+      border: solid 2px black;
+      max-width: 564px;
+      height: 709px;
+    }
     
+h6 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ff847c;
+}
+
+.my-words-box p{
+}
+
+.readMoreBtn {
+  gap: 7px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 40px;
+  width: 178px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+}
+
+.readMoreBtn:hover {
+  background-color: #596e79;
+}
+
+.skills {
+  height: 802px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+
+}
+.skills h4 {
+  margin: 120px 0px 79px 0px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  gap: 66px;
+}
+
+.skills-list {
+  list-style-type: none;
+}
+
+.code {
+  background-color: #ff847c;
+  width: 65px;
+  padding: 2px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.toolbox {
+  background-color: #79c2d0;
+  width: 92px;
+  padding: 2px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.upcoming {
+  background-color: #c7b198;
+  width: 120px;
+  padding: 2px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+li {
+  font-family: EB Garamond;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.71px;
+    color: white;
+}
+
+.timeToTalk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1178px;
+}
+
+.timeToTalk h4{
+  color: #c7b198;
+  margin-top: 196px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  max-width: 496px;
+  height: 164px;
+  margin: 75px 0px 120px 0px;
+}
+
+.social-media-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  max-width: 288px;
+  margin-top: 175px;
+}
