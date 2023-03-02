@@ -462,18 +462,17 @@ footer h4{
 .my-words{
   padding:unset;
   justify-content: center;
+  align-items: center;
 }
 
-  
-}
 .my-words h4 {
-  margin: 120px 0px 53px 89px;
+  margin: 120px 0px 53px 0px;
+  padding-right: 200px;
 }
 .article-container {
   flex-direction: column;
-  align-items: center;
-  margin: none;
-     
+  margin: none;    
+}
 }
 
 
