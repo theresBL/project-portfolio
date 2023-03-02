@@ -27,9 +27,10 @@ header {
   justify-content: center;
   display: flex;
   align-items: center;
-  max-width:540px;
-  height: 431px;
   margin: 252px 113px 297px 103px;
+  width: fit-content;
+  block-size: fit-content;
+  border: solid 2px aqua;
 }
 
 .top-section {
@@ -161,13 +162,16 @@ h4 {
 /* Featured projects */
     .featured-projects {
       margin-top: 120px;
-      align-items: center;
+      padding-left: 346px;
     }
 
     .articles {
       display: flex;
       flex-direction: column;
       align-items: center;
+      border: solid 2px aqua;
+      width: fit-content;
+      block-size: fit-content;
     }
 
     .featured-projects h4 {
@@ -214,6 +218,10 @@ h4 {
       gap: 24px;
     }
 
+    .buttons a {
+      text-decoration: none;
+    }
+
     .liveBtn {
       gap: 7px;
       font-size: 20px;
@@ -253,24 +261,27 @@ h4 {
       background-color: #f0ece2;
       display: flex;
       flex-direction: column;
+      padding-left: 143px;
     }
 
     .article-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 98px;
     margin-bottom: 276px;
     }
 
     .my-words h4{
      color:#ff847c;
-     margin: 120px 1080px 79px 143px;
+     margin: 120px 0px 79px 0px;
     }
 
     .my-words-box {
       max-width: 564px;
       height: 709px;
+      border: solid 2px aqua;
+      width: fit-content;
+      block-size: fit-content;
     }
     
 h6 {
@@ -436,7 +447,6 @@ footer h4{
       margin: none;
      
     }
-
 
 }
 
