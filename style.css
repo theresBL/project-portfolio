@@ -6,8 +6,6 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     font-family: 'Satoshi', sans-serif;
 }
 
@@ -103,9 +101,6 @@ p {
 /* Section with logo */
 .TBL-section {
     width: 50%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -186,6 +181,9 @@ h4 {
       flex-direction: row;
       gap: 40px;
       margin-bottom: 120px;
+      width: fit-content;
+      block-size: fit-content;
+      border: solid 2px pink;
     }
 
   h5{
@@ -398,57 +396,87 @@ footer h4{
 }
 
 /* TABLET */
+/* Header TABLET */
 @media (min-width: 668px) and (max-width: 1024px) {
   header {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-}
-.TBL-section{
-  height: 412px;
-  width:100%;
-}
-.TBL-img{
-  max-height: fit-content;
+    height: unset;
 }
 
 .profile-column{
-  width:100%;
-}
-/* Tech-section */
-.tech {
-  background-color: #f0ece2;
   width: 100%;
-  flex-direction: column;
-  gap: 60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:unset;
 }
 
 .site-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  max-width:540px;
-  height: 431px;
-  /* margin: 252px 113px 297px 103px; */
-}
-.project {
-  width: fit-content;
-  block-size: fit-content;
+  margin:unset;
+  margin: 81px 0px 32px 0px;
 }
 
+.TBL-section{
+  height: 412px;
+  width: 100%;
+}
+.TBL-img{
+  max-height: fit-content;
+  margin:unset;
+}
+
+.profile-column{
+  width: unset;
+}
+
+/* Tech-section TABLET */
+.tech {
+  background-color: #f0ece2;
+  flex-direction: column;
+  gap: 60px;
+  margin:unset;
+}
+
+/* Featured projects-section TABLET */
+.featured-projects{
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  gap:unset;
+  gap: 24px;
+}
+
+.projectIMG {
+  max-height: 100%;
+  max-width: 184px;
+  object-fit: cover;
+}
+
+/* My words-section */
+.my-words{
+  padding:unset;
+  justify-content: center;
+}
+
+  
+}
 .my-words h4 {
   margin: 120px 0px 53px 89px;
 }
-    .article-container {
-      flex-direction: column;
-      align-items: center;
-      margin: none;
+.article-container {
+  flex-direction: column;
+  align-items: center;
+  margin: none;
      
-    }
-
 }
+
+
 
 /* MOBILE */
 @media (max-width: 667px) {
