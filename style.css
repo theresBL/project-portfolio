@@ -137,18 +137,15 @@ h4 {
     margin-left: 143px;
     align-content: center;
     line-height: 32px;
-    }
-
+  }
     .tech-knowledge span:nth-child(1){
       background: #c7b198;
       color: white;
     }
-
     .tech-knowledge span:nth-child(2){
       background: #ff847c;
       color: white;
     }
-
     .tech-knowledge span:nth-child(3){
       background: #79c2d0;
       color: white;
@@ -157,7 +154,7 @@ h4 {
 /* Featured projects */
     .featured-projects {
       margin-top: 120px;
-      padding-left: 346px;
+      padding: 0px 346px 0px 346px;
     }
 
     .articles {
@@ -172,10 +169,10 @@ h4 {
     .featured-projects h4 {
       color:#596e79;
       margin-bottom: 40px;
+      flex-shrink: initial;
     }
 
     .project {
-      max-width: 820px;
       height: 280px;
       display: flex;
       flex-direction: row;
@@ -197,14 +194,14 @@ h4 {
       margin-bottom: 24px;
     }
 
-    .blackBtn{
+    .blackSpan{
       font-size: 16px;
       font-weight: 500;
       gap: 4px;
       margin-bottom: 40px;
     }
 
-   .blackBtn span{
+   .blackSpan span{
       background: black;
       color: white;
       padding: 2px 6px;
@@ -220,7 +217,7 @@ h4 {
       text-decoration: none;
     }
 
-    .liveBtn {
+    .liveBtn, .githubBtn{
       gap: 7px;
       font-size: 20px;
       font-weight: 500;
@@ -232,24 +229,9 @@ h4 {
       align-items: center;
       border: none;
     }
-
     .liveBtn:hover {
       background-color: #ff847c;
     }
-
-    .githubBtn {
-      gap: 7px;
-      font-size: 20px;
-      font-weight: 500;
-      border-radius: 40px;
-      width: 164px;
-      height: 48px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      border: none;
-    }
-
     .githubBtn:hover {
       background-color:#79c2d0;
     }
@@ -267,6 +249,9 @@ h4 {
     flex-direction: row;
     gap: 98px;
     margin-bottom: 276px;
+    width: fit-content;
+    block-size: fit-content;
+    border: solid 2px pink;
     }
 
     .my-words h4{
@@ -383,7 +368,7 @@ footer h4{
   flex-direction: row;
   align-items: center;
   height: 164px;
-  margin: 75px 44px 32px 0px;
+  margin: 75px 0px 32px 0px;
   gap: 29px;
 }
 
@@ -392,7 +377,7 @@ footer h4{
   flex-direction: row;
   gap: 32px;
   max-width: 288px;
-  margin-top: 175px;
+  margin: 175px 0px 168px 0px;
 }
 
 /* TABLET */
@@ -444,7 +429,7 @@ footer h4{
   padding: unset;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0px 12px 0px 24px;
 }
 
 .project {
@@ -479,5 +464,84 @@ footer h4{
 
 /* MOBILE */
 @media (max-width: 667px) {
+  .TBL-section{
+    display: none;
+    }
 
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: unset;
+}
+
+.profile-column{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:unset;
+}
+
+.site-info {
+  margin:unset;
+  margin: 81px 0px 32px 0px;
+}
+
+.TBL-section{
+  height: 412px;
+  width: 100%;
+}
+.TBL-img{
+  max-height: fit-content;
+  margin:unset;
+}
+
+.profile-column{
+  width: unset;
+}
+
+/* Tech-section TABLET */
+.tech {
+  background-color: #f0ece2;
+  flex-direction: column;
+  gap: 60px;
+  margin:unset;
+}
+
+/* Featured projects-section TABLET */
+.featured-projects{
+  padding: unset;
+  padding: 0px 24px 0px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  gap:unset;
+  gap: 24px;
+}
+
+.projectIMG {
+  max-height: 100%;
+  max-width: 184px;
+  object-fit: cover;
+}
+
+/* My words-section */
+.my-words{
+  padding:unset;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-words h4 {
+  margin: 120px 0px 53px 0px;
+  padding-right: 200px;
+}
+.article-container {
+  flex-direction: column;
+  margin: none;    
+}
 }
