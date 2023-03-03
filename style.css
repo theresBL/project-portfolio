@@ -263,12 +263,10 @@ h5{
 
 .article-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   gap: 98px;
   margin-bottom: 276px;
   width: 100%;
-  /* block-size: fit-content; */
-  /* border: solid 2px pink; */
 }
 
 .my-words h4{
@@ -280,8 +278,6 @@ h5{
   max-width: 564px;
   height: 709px;
   width: 49%;
-  /* block-size: fit-content; */
-  /* border: solid 2px aqua; */
 }
 
 .my-words-img {
@@ -318,6 +314,11 @@ h6 {
 
 .readMoreBtn:hover {
   background-color: #596e79;
+  color: white;
+}
+
+.readMoreBtn:hover img{
+  filter: brightness(500%);
 }
 
 /* Skills-section */
@@ -413,9 +414,7 @@ footer h4{
   max-width: 288px;
   margin: 175px 0px 168px 0px;
 }
-
 /* -------------------------------- */
-
 @media (max-width: 1280px) {
   .profile-column{
     width: 50%;
@@ -444,10 +443,8 @@ footer h4{
     overflow-wrap: break-word;
   }
 }
-
 /* -------------------------------- */
 /* TABLET */
-/* Header TABLET */
 @media (max-width: 1024px) {
   header {
     flex-direction: column-reverse;
@@ -518,21 +515,14 @@ footer h4{
   .article-container {
     flex-direction: column;
     margin: none;    
-    align-items: center; /* Sett till att content är centrerat på tablet */
+    align-items: center;
   }
 
   .my-words-box {
-    width: 100%; /* ändrat från 49% till 100% */
+    width: 100%;
   }
 }
-
-
-
 /* ---------------------------- */
-
-
-
-
 /* MOBILE */
 @media (max-width: 668px) {
   header {
