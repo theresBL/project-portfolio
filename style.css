@@ -29,7 +29,7 @@ header {
   margin: 252px 113px 297px 103px;
   width: fit-content;
   block-size: fit-content;
-  border: solid 2px aqua;
+  /* border: solid 2px aqua; */
 }
 
 .top-section {
@@ -168,9 +168,9 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px aqua;
   width: fit-content; 
   block-size: fit-content;
+  /* border: solid 2px aqua; */
 }
 
 .featured-projects h4 {
@@ -187,7 +187,7 @@ h4 {
   margin-bottom: 120px;
   width: fit-content;
   block-size: fit-content;
-  border: solid 2px pink;
+  /* border: solid 2px pink; */
 }
 
 h5{
@@ -261,7 +261,7 @@ h5{
   margin-bottom: 276px;
   width: fit-content;
   block-size: fit-content;
-  border: solid 2px pink;
+  /* border: solid 2px pink; */
 }
 
 .my-words h4{
@@ -272,14 +272,18 @@ h5{
 .my-words-box {
   max-width: 564px;
   height: 709px;
-  border: solid 2px aqua;
   width: fit-content;
   block-size: fit-content;
+  /* border: solid 2px aqua; */
 }
 
 .my-words-img {
   max-width:564px;
   height: 100%;
+}
+
+.my-words-text {
+  overflow-wrap: break-word;
 }
     
 h6 {
@@ -585,11 +589,10 @@ footer h4{
   }
 
   .featured-projects h4 {
-    margin: 64px 0px 64px 0px;
+    margin: 64px 0px 64px 0px; /* detta kan kortas ner till bara margin: 64px 0; */
   }
 
   .project {
-    gap:unset;
     gap: 16px;
     height: 280px;
     display: flex;
@@ -601,7 +604,6 @@ footer h4{
 
   .projectIMG {
     max-width:unset;
-  
   }
 
   .articles {
@@ -634,7 +636,6 @@ footer h4{
     font-size: 63px;
   }
   .my-words-img{
-    
     height: 280px;
     object-fit: cover;
     margin: unset;
