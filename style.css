@@ -176,7 +176,6 @@ h4 {
 .featured-projects h4 {
   color:#596e79;
   margin-bottom: 40px;
-  flex-shrink: initial;
 }
 
 .project {
@@ -280,7 +279,7 @@ h5{
 .my-words-img {
   max-width:564px;
   height: 100%; 
-  width: 100%;
+  /* width: 100%; */
 }
 
 .my-words-text {
