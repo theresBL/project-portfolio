@@ -599,7 +599,6 @@ footer h4{
     flex-direction: column;
     width: 100%;
     block-size: fit-content;
-    border: solid 2px pink;
   }
 
   .projectIMG {
@@ -612,7 +611,7 @@ footer h4{
 
   /* My words-section MOBILE */
   .my-words{
-    padding: unset;
+    /* padding: unset; */
     padding: 24px;
   }
 
