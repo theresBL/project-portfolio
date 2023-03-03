@@ -235,15 +235,23 @@ h5{
   align-items: center;
   border: none;
   cursor:pointer;
+  color: black;
+  background-color: #F5F5F5;
 }
 
 .liveBtn:hover {
   background-color: #ff847c;
+  color: white;
 }
-
 .githubBtn:hover {
   background-color:#79c2d0;
+  color: white;
 }
+
+.liveBtn:hover img, .githubBtn:hover img {
+  filter: brightness(500%);
+}
+
 
 /* My words */
 .my-words {
