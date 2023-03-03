@@ -51,6 +51,7 @@ header {
 .profile-img {
   min-height: 164px;
   width: 164px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -96,7 +97,8 @@ p {
 }
 
 .social-icon:hover {
-  filter: brightness(0%)
+  filter: brightness(0%);
+  cursor:pointer;
 }
 
 /* Section with logo */
@@ -167,7 +169,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   border: solid 2px aqua;
-  width: fit-content;
+  width: fit-content; 
   block-size: fit-content;
 }
 
@@ -233,6 +235,7 @@ h5{
   flex-direction: row;
   align-items: center;
   border: none;
+  cursor:pointer;
 }
 
 .liveBtn:hover {
@@ -248,7 +251,7 @@ h5{
   background-color: #f0ece2;
   display: flex;
   flex-direction: column;
-  padding-left: 143px;
+  padding: 0px 143px 0px 143px;
 }
 
 .article-container {
@@ -273,6 +276,11 @@ h5{
   width: fit-content;
   block-size: fit-content;
 }
+
+.my-words-img {
+  max-width:564px;
+  height: 100%;
+}
     
 h6 {
   font-weight: 900;
@@ -292,6 +300,7 @@ h6 {
   flex-direction: row;
   align-items: center;
   border: none;
+  cursor:pointer;
 }
 
 .readMoreBtn:hover {
@@ -392,6 +401,38 @@ footer h4{
   margin: 175px 0px 168px 0px;
 }
 
+/* -------------------------------- */
+
+@media (max-width: 1280px) {
+  .profile-column{
+    width: 50%;
+  }
+  .site-info{
+   padding: 252px 55px 297px 45px;
+    margin: unset;
+  }
+  .TBL-section{
+    width: 50%;
+  }
+
+  .my-words{
+    padding: 0px 84px 0px 84px;
+    max-width: fit-content;
+  }
+  .my-words-img{
+    max-height: 320px;
+    max-width: 540px;
+    object-fit: cover;
+  }
+
+  .article-container {
+    gap: 32px;
+  }
+
+  .my-words-text {
+    overflow-wrap: break-word;
+  }
+}
 
 /* -------------------------------- */
 /* TABLET */
@@ -474,6 +515,7 @@ footer h4{
 }
 
 
+
 /* ---------------------------- */
 
 
@@ -482,10 +524,9 @@ footer h4{
 /* MOBILE */
 @media (max-width: 668px) {
   header {
-    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    height: unset;
+    min-height: unset;
   }
   .TBL-section{
     display: none;
@@ -536,7 +577,7 @@ footer h4{
 
   /* Featured projects-section MOBILE */
   .featured-projects{
-    padding: unset;
+
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -553,13 +594,18 @@ footer h4{
     height: 280px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 100%;
     block-size: fit-content;
     border: solid 2px pink;
   }
 
   .projectIMG {
+    max-width:unset;
   
+  }
+
+  .articles {
+    width: 100%;
   }
 
   /* My words-section MOBILE */
@@ -588,7 +634,7 @@ footer h4{
     font-size: 63px;
   }
   .my-words-img{
-    width: 280px;
+    
     height: 280px;
     object-fit: cover;
     margin: unset;
