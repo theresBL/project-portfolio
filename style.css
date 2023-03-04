@@ -170,7 +170,6 @@ h4 {
   align-items: center;
   width: fit-content; 
   block-size: fit-content;
-  /* border: solid 2px aqua; */
 }
 
 .featured-projects h4 {
@@ -186,7 +185,6 @@ h4 {
   margin-bottom: 120px;
   width: fit-content;
   block-size: fit-content;
-  /* border: solid 2px pink; */
 }
 
 h5{
