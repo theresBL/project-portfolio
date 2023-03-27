@@ -584,7 +584,8 @@ footer h4 {
   }
 
   .featured-projects h4 {
-    margin: 64px 0px;
+    margin-top: 64px;
+    font-size: 40px;
   }
 
   .project {
@@ -668,7 +669,7 @@ footer h4 {
   }
 
   footer h4 {
-    font-size: 60px;
+    font-size: 40px;
     margin: unset;
 
   }
